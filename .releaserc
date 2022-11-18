@@ -1,0 +1,27 @@
+{
+    "branches": [
+        {
+            "name": "main",
+            "channel": "latest"
+        },
+        {
+            "name": "canary",
+            "channel": "canary",
+            "prerelease": true
+        }
+    ],
+    "plugins": [
+        "@semantic-release/commit-analyzer",
+        "@semantic-release/release-notes-generator",
+        "@semantic-release/changelog",
+        [
+            "@semantic-release/git",
+            {
+                "message": "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}"
+            }
+        ],
+        "@semantic-release/github"
+    ],
+    "preset": "angular",
+    "repositoryUrl": "https://github.com/brb07/release-demo.git"
+}
