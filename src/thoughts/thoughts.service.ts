@@ -41,7 +41,7 @@ export class ThoughtsService {
     const index = this.thoughts.findIndex(
       (thought) => thought.id === parseInt(id),
     );
-    const thought = thoughts[index];
+    const thought = this.thoughts[index];
     thought.likes = thought.likes ? thought.likes + 1 : 1;
     return thought;
   }
