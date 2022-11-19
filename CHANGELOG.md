@@ -1,3 +1,10 @@
+# [1.0.0-beta.3](https://github.com/brb07/release-demo/compare/v1.0.0-beta.2...v1.0.0-beta.3) (2022-11-19)
+
+
+### Features
+
+* **thought:** thought should have like counter ([9189326](https://github.com/brb07/release-demo/commit/9189326f15848ba39f9e7286f398b60b3b078bb3))
+
 # [1.0.0-beta.2](https://github.com/brb07/release-demo/compare/v1.0.0-beta.1...v1.0.0-beta.2) (2022-11-19)
 
 
