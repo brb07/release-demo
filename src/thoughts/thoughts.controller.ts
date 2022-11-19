@@ -37,4 +37,9 @@ export class ThoughtsController {
   updateThought(@Param('id') id: string, @Body() thought: IThought): IThought {
     return this.thoughtsService.updateThought(id, thought);
   }
+
+  @Delete(':id')
+  deleteThought(@Param('id') id: string): IThought {
+    return this.thoughtsService.deleteThought(id);
+  }
 }

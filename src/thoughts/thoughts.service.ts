@@ -27,4 +27,13 @@ export class ThoughtsService {
     this.thoughts[index] = thought;
     return thought;
   }
+
+  deleteThought(id: string): IThought {
+    const index = this.thoughts.findIndex(
+      (thought) => thought.id === parseInt(id),
+    );
+    const thought = this.thoughts[index];
+    this.thoughts.splice(index, 1);
+    return thought;
+  }
 }
