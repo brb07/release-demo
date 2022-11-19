@@ -1,3 +1,10 @@
+# [1.0.0-beta.4](https://github.com/brb07/release-demo/compare/v1.0.0-beta.3...v1.0.0-beta.4) (2022-11-19)
+
+
+### Bug Fixes
+
+* **thought:** fix like counter ([de20191](https://github.com/brb07/release-demo/commit/de201911470327ba0765e5c5bb4d02de9213c2b2)), closes [#1](https://github.com/brb07/release-demo/issues/1)
+
 # [1.0.0-beta.3](https://github.com/brb07/release-demo/compare/v1.0.0-beta.2...v1.0.0-beta.3) (2022-11-19)
 
 
