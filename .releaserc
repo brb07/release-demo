@@ -5,8 +5,8 @@
             "channel": "latest"
         },
         {
-            "name": "canary",
-            "channel": "canary",
+            "name": "beta",
+            "channel": "beta",
             "prerelease": true
         }
     ],
