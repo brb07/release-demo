@@ -36,4 +36,13 @@ export class ThoughtsService {
     this.thoughts.splice(index, 1);
     return thought;
   }
+
+  likeThought(id: string): IThought {
+    const index = this.thoughts.findIndex(
+      (thought) => thought.id === parseInt(id),
+    );
+    const thought = thoughts[index];
+    thought.likes = thought.likes ? thought.likes + 1 : 1;
+    return thought;
+  }
 }

@@ -12,6 +12,7 @@ import { ThoughtsService } from 'src/thoughts/thoughts.service';
 export interface IThought {
   id: number;
   thought: string;
+  likes?: number;
 }
 
 @Controller('thoughts')
@@ -41,5 +42,10 @@ export class ThoughtsController {
   @Delete(':id')
   deleteThought(@Param('id') id: string): IThought {
     return this.thoughtsService.deleteThought(id);
+  }
+
+  @Post(':id/like')
+  likeThought(@Param('id') id: string): IThought {
+    return this.thoughtsService.likeThought(id);
   }
 }
